@@ -14,12 +14,11 @@ app.set('port', process.env.PORT || 3000);
 
 //middlewares: son funciones que te permiten gestionar las peticiones 
 app.use(morgan('dev')); // Sirve para poder ver las peticiones al servidor en consola
-//app.use(express.json); //Para entender los datos que me estan enviando
-app.use(express.json());
+//app.use(express.json());//Para entender los datos que me estan enviando
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); //body formulario
 
 //rutas
-app.use('/agenda',indexRotues); // todo lo que llegue a la ruta localhost:3000/ será controlado por el fichero routes/index.ts
+app.use('/agenda',indexRotues); // todo lo que llegue a la ruta localhost:3000/agenda/ será controlado por el fichero routes/index.ts
 
 export default app;

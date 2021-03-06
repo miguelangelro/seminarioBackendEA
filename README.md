@@ -32,7 +32,9 @@ DELETE http://localhost:3000/agenda/tareaAeliminar Elimina la tarea que le pasam
 
 PUT http://localhost:3000/agenda/update Se actualiza la tarea con los parametros que le pasamos en el cuerpo del mensaje.
 
-Se ha instalado también el modulo nodemon que permite ejecutar el codigo de manera automática cada vez que hay un cambio en la carpeta src. El paquete nodemon.json es el fichero de configuración.
+Se ha instalado el modulo nodemon que permite ejecutar el codigo de manera automática cada vez que hay un cambio en la carpeta src. El paquete nodemon.json es el fichero de configuración.
+
+También se ha instalado el modulo morgan para ver las peticiones en consola.
 
 Para desarrollo usar el comando npm run dev
 
