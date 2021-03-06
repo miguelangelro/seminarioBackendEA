@@ -16,8 +16,12 @@ Para atacar a la API hace falta usar Postman u otra interfaz de Restclient.
 Al principio la BBDD esta vacia.
 
 GET http://localhost:3000/agenda  Devuelve todas las tareas con sus descripciones
+
 GET http://localhost:3000/agenda/nombretarea Devuelve la tarea que le pasamos como parametro
-POST http://localhost:3000/agenda/task  Introduce una nueva tarea. Se pasa la tarea en el cuerpo del mensaje en formato JSON. Ejemplo:
+
+POST http://localhost:3000/agenda/task  Introduce una nueva tarea. Se pasa la tarea en el cuerpo del mensaje en formato JSON. 
+
+Ejemplo:
 
 {
     "title":"Deberes",
@@ -25,6 +29,7 @@ POST http://localhost:3000/agenda/task  Introduce una nueva tarea. Se pasa la ta
 }
 
 DELETE http://localhost:3000/agenda/tareaAeliminar Elimina la tarea que le pasamos como parametro.
+
 PUT http://localhost:3000/agenda/update Se actualiza la tarea con los parametros que le pasamos en el cuerpo del mensaje.
 
 Se ha instalado también el modulo nodemon que permite ejecutar el codigo de manera automática cada vez que hay un cambio en la carpeta src. El paquete nodemon.json es el fichero de configuración.
