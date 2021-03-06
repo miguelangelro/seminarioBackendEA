@@ -25,7 +25,6 @@ Ejemplo:
 
 {
     "title":"Deberes",
-    
     "description": "Hacer los deberes de EA"
 }
 
