@@ -1,0 +1,30 @@
+{
+  "name": "demo_seminario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/morgan": "^1.9.2",
+    "@types/body-parser": "^1.17.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.19",
+    "morgan": "^1.10.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "body-parser": "^1.18.3"
+  }
+}
