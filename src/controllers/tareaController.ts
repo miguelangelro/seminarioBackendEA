@@ -21,10 +21,10 @@ export async function getTarea (req:Request, res:Response): Promise<Response> {
     const query = req.params.task;
     const data = await Tarea.find({"title": query});
     
-    if(data != null)
+    if(data.length != 0)
     return res.status(200).json(data);
 
-    else if(data==null) 
+    else if(data.length==0) 
     return res.status(404).send("Tarea no encontrada");
 
     else return res.status(500).json({"mensaje":"Error"});
