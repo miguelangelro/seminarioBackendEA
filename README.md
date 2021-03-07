@@ -6,7 +6,7 @@ Pasos para instalar el proyecto:
 
 
 1. Git clone de este repositorio --> git clone https://github.com/miguelangelro/seminarioBackendEA.git
-2. cd demo_seminario
+2. cd seminarioBackendEA
 3. npm install
 4. Hace falta ejecutar mongod primero.
 5. npm start
